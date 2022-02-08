@@ -1,7 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react';
-import React, { FC, Fragment, useContext, useState } from 'react';
+import React, { FC, Fragment, useState } from 'react';
 import Spinner from '../../components/loading/Spinner';
-import AuthContext, { AuthProvider, useAuth } from '../../contexts/AuthContext';
+import { useAuth } from '../../contexts/AuthContext';
 import ApiCalls from '../../network/ApiCalls';
 import { LoginRequest } from '../../network/PostRequestModels/Auth/LoginRequest';
 import { toAbsoluteUrl } from '../../util/util';

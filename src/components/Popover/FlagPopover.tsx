@@ -2,23 +2,6 @@ import { Popover, Transition } from '@headlessui/react'
 import { Fragment } from 'react';
 import { TurkeyIcon } from '../../icons/HeaderSvg';
 
-const solutions = [
-      {
-            name: 'Insights',
-            description: 'Measure actions your users take',
-            href: '##',
-      },
-      {
-            name: 'Automations',
-            description: 'Create your own targeted content',
-            href: '##',
-      },
-      {
-            name: 'Reports',
-            description: 'Keep track of your growth',
-            href: '##',
-      },
-]
 
 const FlagPopover = () => {
       return <div className="w-full max-w-sm px-4 top-16">

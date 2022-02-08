@@ -16,7 +16,7 @@ const Footer = () => {
                                     <p className="text-white/75">En iyi CS:GO kasaları</p>
                               </div>
                         </div>
-                        <div className="pl-6 xl:pl-28 ">
+                        <div className="pl-6 xl:pl-28">
                               <ul className="flex flex-row md:flex-col space-y-0 space-x-5 md:space-x-0 md:space-y-3">
                                     <li className="text-muted text-sm">
                                           <a href="">
@@ -43,7 +43,7 @@ const Footer = () => {
                   </div>
                   <div className="bg-transparent sm:bg-light-back rounded-xl lg:rounded-2xl xl:rounded-[80px] p-2 sm:p-16 flex grow ml-0 mt-2 lg:ml-12 ">
                         <div className='flex flex-wrap gap-10 max-w-xl '>
-                              <div className="flex text-sm md:text-2xl">
+                              <div className="flex">
                                     <span>
                                           <KeySvg />
                                     </span>

@@ -39,7 +39,7 @@ export enum Color {
 
 }
 
-export const ColorObj = {
+export const ColorObj: any = {
   clip: "rgba(30, 40, 50, 1)",
   default: "hsla(0,0%,56.1%,.3)",
   lightblue: "rgba(84,202,227,.3)",

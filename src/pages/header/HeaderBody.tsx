@@ -6,7 +6,7 @@ import Login from '../auth/Login';
 import HeaderBodyAcc from './HeaderBodyAcc';
 
 const HeaderBody = () => {
-      const { user }: any = useAuth();
+      const { user } = useAuth();
 
       return <div className="container mx-auto flex items-center justify-between h-16 lg:h-20">
             <div className="flex items-center">

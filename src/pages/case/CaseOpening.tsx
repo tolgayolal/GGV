@@ -26,7 +26,7 @@ type Props = {
 const CaseOpening: FC<Props> = ({ isLoading, data }) => {
       const history = useHistory()
       const { isShow, toggle } = useModal()
-      const { toggle: loginToggle, user: isAuthenticated }: any = useAuth()
+      const { toggle: loginToggle, user: isAuthenticated } = useAuth()
       const [mixed, setMixed] = useState<opened>({ array: data?.contents, dropItem: null })
 
       const queryClient = useQueryClient()

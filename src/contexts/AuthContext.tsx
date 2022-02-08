@@ -39,6 +39,7 @@ export const AuthProvider = ({ children }: ProviderProps) => {
                   })
                   setAuthLoading(false)
             } else {
+                  setAuthLoading(false)
                   setUser(null)
             }
       }, []);

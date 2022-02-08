@@ -1,8 +1,8 @@
 import { Popover, Transition } from '@headlessui/react';
 import React, { Fragment } from 'react';
-import { TurkeyIcon } from '../../icons/HeaderSvg';
+import { TurkeyIcon } from '../../../icons/HeaderSvg';
 
-const FlagPopover = () => {
+const PopoverFlag = () => {
   return <div className="w-full max-w-sm px-4 top-16">
   <Popover className="relative z-20">
         {(open) => {
@@ -48,4 +48,4 @@ const FlagPopover = () => {
 </div>
 };
 
-export default FlagPopover;
+export default PopoverFlag;

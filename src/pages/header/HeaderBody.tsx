@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import FlagPopover from '../../components/popover/FlagPopover';
 import { useAuth } from '../../contexts/AuthContext';
 import { FacebookIcon, GGDROP, InstagramIcon, LiveIcon, MenuIcon, MessengerIcon, SteamIcon, TiktokIcon, TwitterIcon } from '../../icons/HeaderSvg';
 import Login from '../auth/Login';
 import HeaderBodyAcc from './HeaderBodyAcc';
+import PopoverFlag from './HeaderPopovers/PopoverFlag';
 
 const HeaderBody = () => {
       const { user } = useAuth();
@@ -16,7 +16,7 @@ const HeaderBody = () => {
                         </Link>
                   </div>
                   <div>
-                        <FlagPopover />
+                        <PopoverFlag />
                   </div>
                   <div className="space-x-1 hidden lg:flex">
                         <span className="ml-3"><LiveIcon /></span>

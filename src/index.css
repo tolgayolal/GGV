@@ -1,9 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+
+::-webkit-scrollbar {
+  background: #1b1c24;
+  width: 6px;
+  height: 16px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 134, 139, 0.2);
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar-button {
+  background: transparent;
+}
+
+input {
+  outline: none;
+}
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base {
+  a {
+    @apply hover:text-a-hover transition delay-100 duration-100;
+  }
+}
+
 .btn {
-  @apply rounded py-1 px-3 lg:py-2 transform ease-in-out duration-100
+  @apply rounded-[7px] hover:brightness-125 transform ease-in-out duration-150;
+}
+
+.effect {
+  @apply transform ease-in-out duration-150;
 }

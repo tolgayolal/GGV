@@ -64,7 +64,8 @@ class ApiCalls implements IApiCalls {
   public token: string;
   public logout: () => void;
   constructor() {
-    this.server_link = "http://localhost:5000/";
+    // this.server_link = "http://localhost:5000/"; //local
+    this.server_link = "ggval-backend-nig08xeja-tarikciplak.vercel.app"; //product
     this.token = "not set";
     this.logout = () => { }
   }

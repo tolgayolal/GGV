@@ -23,6 +23,9 @@ type Props = {
       isLoading: boolean
       data: ICase
 }
+
+const opening = new Audio('/sounds/opening.mp3')
+
 const CaseOpening: FC<Props> = ({ isLoading, data }) => {
       const history = useHistory()
       const { isShow, toggle } = useModal()
@@ -46,10 +49,13 @@ const CaseOpening: FC<Props> = ({ isLoading, data }) => {
       }
       const buyingAnimation = () => {
             resetAnimation()
+            opening.currentTime = 0;
+            opening.volume = 0.05;
+            opening.play();
             controls.set({ scale: 1, y: 20 });
             controls.start(openCaseAnimation);
             // itemlerin pixelleri baz alındı dinamikleştirelecek.
-            setSpinning(Math.floor(Math.random() * 230) - 10820);
+            setSpinning(Math.floor(Math.random() * 230) - 10760);
             setTimeout(() => {
                   setAnimation(false)
                   toggle()
